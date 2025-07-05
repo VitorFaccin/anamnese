@@ -5,12 +5,16 @@
   <title>Ficha de Anamnese - Tattoo</title>
   <style>
     body {
-  font-family: Arial, sans-serif;
-  background-color: #ffcbdb;
-  padding: 0;
-  max-width: 100%;
-  margin: 0;
-}
+      font-family: Arial, sans-serif;
+      background-color: #ffcbdb;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 600px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
     label {
       display: block;
       margin-top: 1rem;
@@ -37,53 +41,57 @@
   </style>
 </head>
 <body>
-  <img src="https://vitorfaccin.github.io/anamnese/logo_anamnese.jpeg" alt="Logo do Estúdio" style="width: 100%;  height: auto; margin: 0;">
-  <h1>Ficha de Anamnese para Tatuagem</h1>
-  <form id="anamneseForm">
-    <label>Nome completo:
-      <input type="text" name="nome" required>
-    </label>
 
-    <label>Data de nascimento:
-      <input type="date" name="data_nascimento" required>
-    </label>
+  <img src="https://vitorfaccin.github.io/anamnese/logo_anamnese.jpeg" alt="Logo do Estúdio" style="width: 100%; height: auto; display: block; margin: 0;">
 
-    <label>Email:
-      <input type="email" name="email" required>
-    </label>
+  <div class="container">
+    <h1>Ficha de Anamnese para Tatuagem</h1>
+    
+    <form id="anamneseForm">
+      <label>Nome completo:
+        <input type="text" name="nome" required>
+      </label>
 
-    <label>Você possui alguma condição médica relevante (ex: diabetes, epilepsia)?
-      <textarea name="condicao_medica"></textarea>
-    </label>
+      <label>Data de nascimento:
+        <input type="date" name="data_nascimento" required>
+      </label>
 
-    <label>Faz uso de medicação contínua?
-      <textarea name="medicacao"></textarea>
-    </label>
+      <label>Email:
+        <input type="email" name="email" required>
+      </label>
 
-    <label>Possui alergia a algum produto químico, tinta ou material médico?
-      <textarea name="alergias"></textarea>
-    </label>
+      <label>Você possui alguma condição médica relevante (ex: diabetes, epilepsia)?
+        <textarea name="condicao_medica"></textarea>
+      </label>
 
-    <label>Já fez tatuagem antes?
-      <select name="tatuagem_antes">
-        <option value="sim">Sim</option>
-        <option value="nao">Não</option>
-      </select>
-    </label>
+      <label>Faz uso de medicação contínua?
+        <textarea name="medicacao"></textarea>
+      </label>
 
-    <label>Área do corpo desejada:
-      <input type="text" name="area_corpo" required>
-    </label>
+      <label>Possui alergia a algum produto químico, tinta ou material médico?
+        <textarea name="alergias"></textarea>
+      </label>
 
-    <label>Referência ou ideia da tatuagem:
-      <textarea name="referencia_tatuagem"></textarea>
-    </label>
+      <label>Já fez tatuagem antes?
+        <select name="tatuagem_antes">
+          <option value="sim">Sim</option>
+          <option value="nao">Não</option>
+        </select>
+      </label>
 
-    <button type="submit">Enviar</button>
-  </form>
+      <label>Área do corpo desejada:
+        <input type="text" name="area_corpo" required>
+      </label>
+
+      <label>Referência ou ideia da tatuagem:
+        <textarea name="referencia_tatuagem"></textarea>
+      </label>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
 
   <script>
-    // Aqui entra a integração com o Google Apps Script
     const form = document.getElementById("anamneseForm");
 
     form.addEventListener("submit", function(event) {
@@ -108,5 +116,6 @@
       });
     });
   </script>
+  
 </body>
 </html>
