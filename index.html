@@ -2,6 +2,10 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#FCE3EB">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <title>Ficha de Anamnese - Tattoo</title>
   <style>
     body {
@@ -10,42 +14,97 @@
       margin: 0;
       padding: 0;
     }
-    .container {
-      max-width: 100%;
-      margin: 2rem 2rem;
-      padding: 0 1rem;
+
+    header {
+      background-color: #222;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+      font-size: 1.2rem;
+      position: sticky;
+      top: 0;
+      z-index: 10;
     }
+
+    .logo {
+      width: 100%;
+      max-height: 200px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .container {
+      max-width: 500px;
+      margin: 0 auto;
+      padding: 1rem;
+    }
+
+    h1 {
+      font-size: 1.3rem;
+      text-align: center;
+      margin: 1rem 0;
+    }
+
     label {
       display: block;
       margin-top: 1rem;
+      font-weight: bold;
+      color: #333;
     }
+
     input, textarea, select {
       width: 100%;
-      padding: 0.5rem;
-      margin-top: 0.5rem;
+      padding: 0.9rem;
+      margin-top: 0.4rem;
       border: 1px solid #ccc;
-      border-radius: 4px;
+      border-radius: 8px;
+      font-size: 1rem;
+      background-color: #fff;
+      box-sizing: border-box;
     }
+
+    textarea {
+      resize: vertical;
+      min-height: 80px;
+    }
+
     button {
-      margin-top: 2rem;
-      padding: 0.75rem;
+      width: 100%;
+      margin-top: 1.5rem;
+      padding: 1rem;
       background-color: #222;
       color: white;
       border: none;
-      border-radius: 4px;
+      border-radius: 8px;
+      font-size: 1.1rem;
       cursor: pointer;
+      transition: background 0.3s ease;
     }
+
     button:hover {
       background-color: #444;
+    }
+
+    /* Melhor experiência mobile */
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 1.1rem;
+      }
+
+      input, textarea, select, button {
+        font-size: 1rem;
+      }
     }
   </style>
 </head>
 <body>
 
-  <img src="https://vitorfaccin.github.io/anamnese/logo_anamnese.jpeg" alt="Logo do Estúdio" style="width: 100%; height: auto; display: block; margin: 0;">
+  <header>Ficha de Anamnese</header>
+
+  <img src="https://vitorfaccin.github.io/anamnese/logo_anamnese.jpeg" alt="Logo do Estúdio" class="logo">
 
   <div class="container">
-    <h1>Ficha de Anamnese para Tatuagem</h1>
+    <h1>Preencha seus dados</h1>
     
     <form id="anamneseForm">
       <label>Nome completo:
