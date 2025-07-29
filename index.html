@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#FCE3EB">
+  <meta name="theme-color" content="#ffe8ee">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <title>Ficha de Anamnese - Tattoo</title>
@@ -25,16 +25,39 @@
 
 
   <div class="container">
-    <h1>Preencha seus dados</h1>
+    <h1>Ficha de Anamnese</h1>
+
+    <div style="text-align: center;">
+        <hr class="linha-parcial">
+    </div>
+
+    <h2>Informações Importantes</h2>
+
+    <label><strong>1. Restrições para realização da tatuagem:</strong> Não realizamos tatuagens em menores de idade (sem a presença do responsável), gestantes ou pessoas com diabetes sem atestado médico.</label>
     
+    <label><strong>2. Cuidados e riscos:</strong> A tatuagem envolve riscos, como reações alérgicas e infecções. Mesmo que você já tenha tatuagens, cada procedimento é único. Seu corpo e sua imunidade podem ter mudado. Em caso de reação adversa ou dúvidas, entre em contato com sua tatuadora/tatuador imediatamente.</label>
+
+    <label><strong>3. Cicatrização:</strong> O tempo de cicatrização varia conforme fatores como alimentação, estilo de vida e imunidade. Durante os primeiros 30 dias, é proibido: Expor a tatuagem ao sol; Usar protetor solar na área tatuada; Tomar banho de mar ou piscina.</label>
+
+    <label><strong>4. Alimentação:</strong> Evite durante a cicatrização: Alimentos gordurosos, carne de porco, ovos e frutos do mar. Eles podem causar infecções. Mantenha uma alimentação saudável e hidrate-se bem.</label>
+
+    <label><strong>5. Acidentes com agulha:</strong> Em caso de acidente de perfuração, tanto a tatuadora/tatuador quanto o cliente serão encaminhados a uma unidade de saúde para realização de exames. Agradecemos a compreensão de que acidentes podem acontecer e essa é a medida preventiva adotada.</label>
+
+    <label><strong>6. Retoque:</strong> O retoque tem o custo mínimo de R$150,00, válido para até 2 meses após a tatuagem. (Após esse período, a tatuadora/tatuador poderá definir um novo valor.)</label>
+    
+
     <form id="anamneseForm">
-      <label>Nome completo:
-        <input type="text" name="nome" required>
+      <label>Data do Atendimento:
+        <input type="date" name="data_atendimento" required>
       </label>
 
-      <label>Data de nascimento:
-        <input type="date" name="data_nascimento" required>
+      <label>Horário do Atendimento:
+        <input type="time" name="horario_atend" required>
       </label>
+
+      <div class="informacoes_cliente">
+        <h2>Informações do Cliente</h2>
+      </div>
 
       <label>Email:
         <input type="email" name="email" required>
