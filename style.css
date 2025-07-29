@@ -12,7 +12,7 @@ header {
   align-items: center;
   text-align: center;
   justify-content: space-between;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 1.5rem;
   font-size: 1.2rem;
   position: sticky;
   top: 0;
@@ -23,12 +23,11 @@ header img{
     height: auto;
 }
 
-.logo {
-  width: 100%;
-  max-height: 200px;
-  object-fit: cover;
-  display: block;
+header img.header_kim{
+    max-height:100px;
+    height: auto;
 }
+
 
 .container {
   max-width: 500px;
@@ -37,18 +36,34 @@ header img{
 }
 
 h1 {
+  font-size: 1.8rem;
+  text-align: left;
+  margin: 1rem 0;
+}
+h2 {
   font-size: 1.3rem;
-  text-align: center;
+  text-align: left;
   margin: 1rem 0;
 }
 
 label {
   display: block;
   margin-top: 1rem;
-  font-weight: bold;
+  font-weight: normal;
   color: #333;
 }
-
+.informacoes_cliente {
+    background-color: #ffe8ee; /* Um tom de rosa claro (pode ajustar) */
+    border-radius: 15px; /* Bordas arredondadas (ajuste o valor para mais ou menos) */
+    padding: 8px; /* Espaçamento interno para o conteúdo não colar nas bordas */
+    margin-bottom: 3px; /* Espaço abaixo do bloco */
+    width: 100%; /* Ocupa 80% da largura da tela/contêiner pai */
+    max-width: 900px; /* Limita a largura máxima para não ficar grande demais em telas largas */
+    margin-left: auto; /* Centraliza o bloco */
+    margin-right: auto; /* Centraliza o bloco */
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para dar profundidade */
+    text-align: center; /* Centraliza o texto "Informações do Cliente" */
+}
 input, textarea, select {
   width: 100%;
   padding: 0.9rem;
